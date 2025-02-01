@@ -22,32 +22,33 @@
 
 <body class="font-sora">
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] ...">
-        <nav>
-            <div class="flex justify-between">
+        <nav class="py-8 max-w-6xl m-auto">
+            <div class="flex justify-between items-center">
                 <div> <img src="c2-assets/logo-header.png" alt=""></div>
-                <div class="justify-between">
-                    <ul class="flex  p-8">
-                        <li>Product</li>
-                        <li>Services</li>
-                        <li>Contact us</li>
-                    </ul>
-                </div>
-                <div><i class="fa-solid fa-magnifying-glass"></i>
+                <ul class="hidden  lg:flex gap-8">
+                    <li>Product</li>
+                    <li>Services</li>
+                    <li>Contact us</li>
+                </ul>
+
+                <div class="hidden  lg:flex items-center gap-6">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <input type="button" class="rounded-md border-spacing-1" value="Login">
+                    <button class="border border-[#179800] p-2 rounded-lg">Log In</button>
                     <button class="bg-[#179800] text-white p-2 rounded-lg">Register</button>
                 </div>
+                <div class="lg:hidden"><i class="fa-solid fa-bars"></i></div>
             </div>
 
         </nav>
 
         <!-- banner Styles -->
         <div>
-            <div class="p-8 justify-items-center">
+            <div class="pt-8 justify-items-center">
                 <h1 class="text-6xl text-center font-semibold ">Freshness <span class="text-[#179800]">You Can <br>
                         Count</span> On, Prices You’ll Love!
                 </h1>
-                <p class="text-center text-xl mt-8 mb-8">Shop your daily essentials at unbeatable prices. From fresh
+                <p class="text-center text-xl my-10 mx-32 font-light">Shop your daily essentials at unbeatable prices. From fresh
                     produce to pantry staples, we’ve got you covered every day!
                 </p>
                 <img src="c2-assets/hero-vegetables.png" alt="">
@@ -92,95 +93,102 @@
 
 
         <!-- popular product -->
-        <section>
+        <section >
             <div class="bg-[#EFEBE3] mt-36 mb-36 pb-10">
-                <h3 class="text-[#179800] text-4xl font-semibold pt-36 ml-3 pb-12">Popular Products</h3>
-                <div class="flex ml-3 mr-4">
-                    <div class="w-2/5 bg-gradient-to-b from-[#53DB3A] to-[#FFFFFF]... rounded-2xl pt-8 pr-8 pl-8 mr-4">
-                        <h3 class="text-slate-50 text-3xl font-medium pb-5"> <i class="fa-solid fa-star"></i> 30% off</h3>
+                <div class="max-w-6xl m-auto">
+                    <h3 class="text-[#179800] text-4xl font-semibold pt-36 ml-3 pb-12">Popular Products</h3>
+                <div class="flex flex-col lg:flex-row ml-3 mr-4">
+                    <div class=" lg:w-4/12 bg-gradient-to-b from-[#53DB3A] to-[#FFFFFF]... rounded-2xl pt-8 pr-8 pl-8 mr-4">
+                        <h3 class="text-slate-50 text-3xl font-medium pb-5 pt-8">30% off
+                        </h3>
                         <p class="pb-5">Discover a world of treats, toys, and essentials handpicked for </p>
-                        <button class="pt-4 pb-4 pr-10 pl-10 bg-white rounded-2xl">Buy Now</button>
+                        <button class="px-6 py-2 bg-white rounded-xl text-xl">Buy Now</button>
                         <div class="justify-items-end">
                             <img src="c2-assets/vegetable-offer.png" alt="">
                         </div>
                     </div>
-                    <div class="w-3/5 grid grid-cols-3 gap-4">
-                        <div class=" flex bg-white p-4 rounded-2xl">
-                            <div class="p-4 rounded-2xl bg-[#EFEBE3]"><img src="c2-assets/Group 16.png" alt=""></div>
+                    <div class="lg:w-8/12 grid grid-cols-2 my-10 lg:grid-cols-3 gap-4">
+                        <div class="flex bg-white p-2 rounded-xl items-center">
+                            <div class="p-2 rounded-xl bg-[#EFEBE3]"><img src="c2-assets/Group 16.png" alt=""></div>
+                            <div class="text-start pl-2">
+                                <p> <i class="fa-solid fa-star text-amber-500"></i> 4.5</p>
+                                <p>Onion 1 KG</p>
+                                <p>$39.99</p>
+                            </div>
+                        </div>
+                        <div class="flex bg-white p-2 rounded-xl items-center">
+                            <div class="p-2 rounded-xl bg-[#EFEBE3]"><img src="c2-assets/image 41.png" alt=""></div>
+                            <div class="text-start p-4">
+                                <p> <i class="fa-solid fa-star text-amber-500"></i> 4.5</p>
+                                <h4>Tomato 1 KG</h4>
+                                <h5>$39.99</h5>
+                            </div>
+                        </div>
+                        <div class=" flex bg-white p-2 rounded-xl items-center">
+                            <div class="p-2 rounded-xl bg-[#EFEBE3]"><img src="c2-assets/Group 16 (1).png" alt="">
+                            </div>
+                            <div class="text-start p-4">
+                                <p> <i class="fa-solid fa-star text-amber-500"></i> 4.5</p>
+                                <h4>Potato 1 KG</h4>
+                                <h5>$39.99</h5>
+                            </div>
+                        </div>
+                        <div class=" flex bg-white p-2 rounded-xl items-center">
+                            <div class="p-2 rounded-xl bg-[#EFEBE3]"><img src="c2-assets/image 41.png" alt=""></div>
+                            <div class="text-start p-4">
+                                <p> <i class="fa-solid fa-star text-amber-500"></i> 4.5</p>
+                                <h4>Tomato 1 KG</h4>
+                                <h5>$39.99</h5>
+                            </div>
+                        </div>
+                        <div class=" flex bg-white p-2 rounded-xl items-center">
+                            <div class="p-2 rounded-xl bg-[#EFEBE3]"><img src="c2-assets/Group 16 (1).png" alt="">
+                            </div>
+                            <div class="text-start p-4">
+                                <p> <i class="fa-solid fa-star text-amber-500"></i> 4.5</p>
+                                <h4>Potato 1 KG</h4>
+                                <h5>$39.99</h5>
+                            </div>
+                        </div>
+                        <div class=" flex  bg-white p-2 rounded-xl items-center">
+                            <div class="p-2 rounded-xl bg-[#EFEBE3]"><img src="c2-assets/Group 16.png" alt=""></div>
                             <div class="text-start p-4">
                                 <p> <i class="fa-solid fa-star text-amber-500"></i> 4.5</p>
                                 <h4>Onion 1 KG</h4>
                                 <h5>$39.99</h5>
                             </div>
                         </div>
-                        <div class=" flex bg-white p-4 rounded-2xl">
-                            <div class="p-4 rounded-2xl bg-[#EFEBE3]"><img src="c2-assets/image 41.png" alt=""></div>
+                        <div class=" flex  bg-white p-2 rounded-xl items-center">
+                            <div class="p-2 rounded-xl bg-[#EFEBE3]"><img src="c2-assets/image 41.png" alt=""></div>
                             <div class="text-start p-4">
                                 <p> <i class="fa-solid fa-star text-amber-500"></i> 4.5</p>
                                 <h4>Tomato 1 KG</h4>
                                 <h5>$39.99</h5>
                             </div>
                         </div>
-                        <div class=" flex bg-white p-4 rounded-2xl">
-                            <div class="p-4 rounded-2xl bg-[#EFEBE3]"><img src="c2-assets/Group 16 (1).png" alt=""></div>
+                        <div class=" flex bg-white p-2 rounded-xl items-center">
+                            <div class="p-2 rounded-xl bg-[#EFEBE3]"><img src="c2-assets/Group 16 (1).png" alt="">
+                            </div>
                             <div class="text-start p-4">
                                 <p> <i class="fa-solid fa-star text-amber-500"></i> 4.5</p>
                                 <h4>Potato 1 KG</h4>
                                 <h5>$39.99</h5>
                             </div>
                         </div>
-                        <div class=" flex bg-white p-4 rounded-2xl">
-                            <div class="p-4 rounded-2xl bg-[#EFEBE3]"><img src="c2-assets/image 41.png" alt=""></div>
+                        <div class=" hidden lg:flex bg-white p-2 rounded-xl items-center">
+                            <div class="p-2 rounded-xl bg-[#EFEBE3]"><img src="c2-assets/image 41.png" alt=""></div>
                             <div class="text-start p-4">
                                 <p> <i class="fa-solid fa-star text-amber-500"></i> 4.5</p>
                                 <h4>Tomato 1 KG</h4>
                                 <h5>$39.99</h5>
                             </div>
                         </div>
-                        <div class=" flex bg-white p-4 rounded-2xl">
-                            <div class="p-4 rounded-2xl bg-[#EFEBE3]"><img src="c2-assets/Group 16 (1).png" alt=""></div>
-                            <div class="text-start p-4">
-                                <p> <i class="fa-solid fa-star text-amber-500"></i> 4.5</p>
-                                <h4>Potato 1 KG</h4>
-                                <h5>$39.99</h5>
-                            </div>
-                        </div>
-                        <div class=" flex  bg-white p-4 rounded-2xl">
-                            <div class="p-4 rounded-2xl bg-[#EFEBE3]"><img src="c2-assets/Group 16.png" alt=""></div>
-                            <div class="text-start p-4">
-                                <p> <i class="fa-solid fa-star text-amber-500"></i> 4.5</p>
-                                <h4>Onion 1 KG</h4>
-                                <h5>$39.99</h5>
-                            </div>
-                        </div>
-                        <div class=" flex  bg-white p-4 rounded-2xl">
-                            <div class="p-4 rounded-2xl bg-[#EFEBE3]"><img src="c2-assets/image 41.png" alt=""></div>
-                            <div class="text-start p-4">
-                                <p> <i class="fa-solid fa-star text-amber-500"></i> 4.5</p>
-                                <h4>Tomato 1 KG</h4>
-                                <h5>$39.99</h5>
-                            </div>
-                        </div>
-                        <div class=" flex bg-white p-4 rounded-2xl">
-                            <div class="p-4 rounded-2xl bg-[#EFEBE3]"><img src="c2-assets/Group 16 (1).png" alt=""></div>
-                            <div class="text-start p-4">
-                                <p> <i class="fa-solid fa-star text-amber-500"></i> 4.5</p>
-                                <h4>Potato 1 KG</h4>
-                                <h5>$39.99</h5>
-                            </div>
-                        </div>
-                        <div class=" flex bg-white p-4 rounded-2xl">
-                            <div class="p-4 rounded-2xl bg-[#EFEBE3]"><img src="c2-assets/image 41.png" alt=""></div>
-                            <div class="text-start p-4">
-                                <p> <i class="fa-solid fa-star text-amber-500"></i> 4.5</p>
-                                <h4>Tomato 1 KG</h4>
-                                <h5>$39.99</h5>
-                            </div>
-                        </div>
-                        
+
 
                     </div>
                 </div>
+                </div>
+                
 
             </div>
 
@@ -188,50 +196,51 @@
 
         <!-- Arrival & Offers -->
 
-        <section>
-            <h2 class="text-[#179800] text-4xl font-semibold pt-36 ml-3 pb-12" >Arrival & Offers</h2>
-            <div class="flex justify-center gap-5">
-                <div class="flex bg-[#115414] rounded-2xl">
-                    <div>
+        <section class="max-w-6xl m-auto">
+            <h2 class="text-[#179800] text-4xl font-semibold pt-36 ml-6 pb-12">Arrival & Offers</h2>
+            <div class="flex flex-col mx-4 lg:flex-row justify-center gap-5">
+                <div class="lg:w-9/12 flex bg-[#115414] rounded-2xl items-center pl-6 pt-5">
+                    <div >
                         <img src="c2-assets/dawat-logo.png" alt="">
-                        <button class="text-white bg-[#63B76D] rounded-md p-3 m-4">Cook Exotic Dishes</button>
-                        <h3 class="text-white text-4xl font-semibold">UP to 20% OFF</h3>
+                        <button class="text-white bg-[#63B76D] rounded-md px-6 py-2 m-6 font-bold">Cook Exotic Dishes</button>
+                        <h3 class="text-white text-2xl font-semibold px-4">UP to 20% OFF</h3>
                     </div>
                     <div>
                         <img src="c2-assets/dawat-mock-up.png" alt="">
                     </div>
                 </div>
-                <div class="flex bg-[#102861] rounded-2xl">
+                <div class=" lg:w-7/12 flex bg-[#102861] rounded-2xl items-center pl-6 pt-5 ">
                     <div>
                         <img src="c2-assets/india-gate-logo.png" alt="">
-                        <button class="text-white bg-[#2A4D97] rounded-md p-3 m-4">World’s No.1 Rice</button>
-                        <h3 class="text-white text-4xl font-semibold">UP to 40% OFF</h3>
+                        <button class="text-white bg-[#2A4D97] rounded-md px-6 py-2 m-2 font-bold">World’s No.1 Rice</button>
+                        <h3 class="text-white text-2xl font-semibold m-2">UP to 40% OFF</h3>
                     </div>
                     <div>
-                        <img src="c2-assets/india-gate-mock-up.png" alt="">
+                        <img  src="c2-assets/india-gate-mock-up.png" alt="">
                     </div>
                 </div>
             </div>
-           
+
         </section>
     </main>
-    <footer>
-        <div class="bg-[#EFEBE3] flex justify-between mt-48 -mb-64">
+    <footer class="relative mt-72">
+        <div class="bg-[#EFEBE3] flex justify-between absolute -mt-40 right-52">
             <div><img src="c2-assets/vegetable-busket.png" alt=""></div>
             <div>
                 <h3>Get Grocery News!</h3>
                 <p>Exclusive training tips, ticks, product deals and more.</p>
-                <input type="email" name="Enter Your Email" id="">
+                <input type="email" placeholder="Enter Your Email" name="" id="">
                 <button>Subscribe</button>
             </div>
 
         </div>
 
 
-        <div class="bg-[#179800] flex justify-between pt-60 mt-36">
+        <div class="bg-[#179800] flex justify-between pt-60">
             <div>
                 <img src="c2-assets/logo-footer.png" alt="">
-                <p class="text-white">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+                <p class="text-white">Discover a world of treats, toys, and essentials handpicked for your furry friends
+                </p>
             </div>
             <div class="text-white">
                 <h4>Product</h4>
@@ -241,12 +250,12 @@
             <div class="text-white">
                 <h4>Follow Us</h4>
                 <div class="flex">
-                <img src="c2-assets/fb.png" alt="">
-                <img src="c2-assets/twitter.png" alt="">
-                <img src="c2-assets/google+.png" alt="">
-                <img src="c2-assets/dribble.png" alt="">
+                    <img src="c2-assets/fb.png" alt="">
+                    <img src="c2-assets/twitter.png" alt="">
+                    <img src="c2-assets/google+.png" alt="">
+                    <img src="c2-assets/dribble.png" alt="">
                 </div>
-                
+
             </div>
         </div>
 
